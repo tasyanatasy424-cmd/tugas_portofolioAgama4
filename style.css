@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e8f0e8 0%, #d4e4d4 100%);
+  padding: 30px 20px;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  background: linear-gradient(135deg, #2c7a4d 0%, #1a4d2a 100%);
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.foto-area img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.biodata-area h2 {
+  color: white;
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+}
+
+.biodata-area p {
+  color: #d4ecd4;
+  margin: 5px 0;
+}
+
+.judul {
+  text-align: center;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #2c7a4d;
+}
+
+.judul h1 {
+  color: #1a4d2a;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.judul p {
+  color: #5a6e64;
+  font-style: italic;
+}
+
+.kata-pengantar {
+  background: #fff8e7;
+  padding: 14px 18px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border-left: 5px solid #e6b422;
+}
+
+.pendahuluan {
+  background: #eef3ea;
+  padding: 14px 18px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  border-left: 5px solid #2c7a4d;
+}
+
+.bab {
+  margin-top: 30px;
+  background: #fefefe;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s;
+}
+
+.bab:hover {
+  transform: translateX(5px);
+}
+
+.bab h2 {
+  color: #2c7a4d;
+  border-bottom: 2px solid #dde8e0;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  font-size: 22px;
+}
+
+.bab p {
+  margin: 14px 0;
+  text-align: justify;
+}
+
+.bab ul {
+  margin-left: 25px;
+  margin-bottom: 12px;
+}
+
+.bab li {
+  margin: 8px 0;
+}
+
+.ayat {
+  background: #f0f7ec;
+  padding: 12px 18px;
+  border-radius: 10px;
+  margin: 12px 0;
+  font-style: italic;
+  color: #2c5a3e;
+  border-left: 4px solid #2c7a4d;
+}
+
+.pengalaman {
+  background: #fff3e0;
+  padding: 15px 20px;
+  border-radius: 14px;
+  margin-top: 16px;
+  border: 1px solid #f0d8a8;
+}
+
+.pengalaman p {
+  margin: 10px 0;
+}
+
+.daftar-pustaka {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 2px solid #dde8e0;
+  font-size: 13px;
+  background: #f9fbf7;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.daftar-pustaka h3 {
+  color: #2c7a4d;
+  margin-bottom: 12px;
+}
+
+.daftar-pustaka ul {
+  margin-left: 25px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #e0e8e4;
+  font-size: 12px;
+  color: #6a7e74;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 18px;
+  }
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .judul h1 {
+    font-size: 22px;
+  }
+  .bab h2 {
+    font-size: 18px;
+  }
+}
